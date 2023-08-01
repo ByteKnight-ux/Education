@@ -74,3 +74,15 @@ print(a)
 print(a.argmax(axis=1))
 # RETURNS A MATRIX OF THE MINIMA INDEX FOR EACH SERIES
 print(a.argmin(axis=0))
+# returns the matrix form of the nparray
+m = np.asmatrix(a)
+# elements are being accessed unlike the array
+print(m[2,1])
+
+# TO SAVE THE ARRAY TO .npy FILE
+# np.save('MyArray.npy', a, False)
+
+# ALL (AND)
+print(np.all(np.array((True, False, True))))
+# ANY (OR)
+print(np.all(np.array((True, False, True))), end='\n\n')
